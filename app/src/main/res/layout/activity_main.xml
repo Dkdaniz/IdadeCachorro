@@ -11,39 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.dkdaniz.idadecachorro.MainActivity">
 
-    <TextView
-        android:text="Digite a idade do seu cachorro, para descobrir a idade dele em anos humanos:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="141dp"
-        android:id="@+id/textView2" />
-
-    <Button
-        android:text="Descobrir Idade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnIdade"
-        android:layout_marginTop="24dp"
-        android:layout_below="@+id/txtIdade"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/txtIdade"
-        android:layout_marginTop="33dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColorLink="?attr/colorPrimary"
-        android:lineSpacingExtra="10sp"
-        android:singleLine="false" />
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -54,20 +21,69 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:srcCompat="@drawable/cachorro"
+            android:layout_marginTop="22dp"
+            android:id="@+id/imageView"
+            android:layout_marginStart="12dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="12dp"
-            android:id="@+id/imageView" />
+            android:layout_alignParentStart="true"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dois_anos"
+            android:id="@+id/imgIdade"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageView"
+            android:contentDescription="" />
+
+        <Button
+            android:text="Descobrir Idade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnIdade"
+            tools:ignore="HardcodedText"
+            android:layout_marginBottom="25dp"
+            android:layout_above="@+id/txtFrases"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/edtIdade"
+            android:background="@drawable/ossso"
+            android:layout_above="@+id/btnIdade"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/edtIdadeHumana"
+            android:background="@drawable/msg23"
+            android:textSize="12sp"
+            tools:ignore="LabelFor,SmallSp"
+            android:clickable="false"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginTop="10dp"
+            android:editable="true"
+            android:enabled="true" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="53dp"
-            android:id="@+id/txtIdadeHumano"
-            android:textStyle="normal|bold"
-            android:textSize="18sp" />
+            android:id="@+id/txtFrases"
+            android:background="@drawable/msg23"
+            android:layout_marginTop="11dp"
+            android:enabled="true"
+            android:editable="false"
+            android:layout_alignTop="@+id/imgIdade"
+            android:layout_alignStart="@+id/btnIdade" />
+
     </RelativeLayout>
 
 </RelativeLayout>

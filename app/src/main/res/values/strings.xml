@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Idade Cachorro - Daniz</string>
+    <string name="dois_anos">Seu cachorro ainda é um bebe na idade humana, cuide bem dele.</string>
+    <string name="dez_anos">Seu amigo é uma criança, brincalhora e sorridente, brinque com ele</string>
+    <string name="quinze_anos">Seu amigo é uma adolecente, Cuidado ele e rebelde</string>
+    <string name="vinte_anos">Seu cachorro é um jovem baladeiro, ja quer sair para festas e balada</string>
+    <string name="quarenta_anos">Seu cachorro é um pai de familia</string>
+    <string name="sessenta_anos">Seu cachorro e um idoso cuide muito bem nesse final de vida.</string>
+    <string name="idade_cachorro">Digite a idade do seu cachorro, para descobrir a idade dele em anos humanos</string>
+    <string name="Frase_inicial">Qual será a idade do seu amiguinho?</string>
+    <string name="Erro_Preencher_Idade">Ops!! Você esqueceu de preecher a idade. favor preencher antes de continuar</string>
+
+
 </resources>
